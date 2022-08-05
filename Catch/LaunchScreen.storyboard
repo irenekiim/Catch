@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NavyBG" translatesAutoresizingMaskIntoConstraints="NO" id="Bgg-Es-5mk">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pokelogo" translatesAutoresizingMaskIntoConstraints="NO" id="isY-JO-reR">
+                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="2zs-ou-IUX"/>
+                                    <constraint firstAttribute="height" constant="128" id="inl-rk-l88"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Bgg-Es-5mk" secondAttribute="bottom" id="1eF-iC-Zsy"/>
+                            <constraint firstItem="isY-JO-reR" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6oo-U5-Sl7"/>
+                            <constraint firstItem="Bgg-Es-5mk" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="9a0-84-MGU"/>
+                            <constraint firstAttribute="trailing" secondItem="Bgg-Es-5mk" secondAttribute="trailing" id="BVP-ki-ygm"/>
+                            <constraint firstItem="isY-JO-reR" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="EH8-2N-Z2L"/>
+                            <constraint firstItem="Bgg-Es-5mk" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="xVX-C0-hLe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="30" y="80"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NavyBG" width="1242" height="2688"/>
+        <image name="pokelogo" width="840" height="709"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
