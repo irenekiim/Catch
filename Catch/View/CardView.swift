@@ -15,23 +15,41 @@ struct CardView: View {
     
     
     var body: some View {
-        //Image(c_atch.image)
-        Image("Princeton")
+        Image(c_atch.image)
             .resizable()
-            .cornerRadius(25)
-            .scaledToFill()
-            .frame(minWidth: 0, maxWidth: .infinity)
+            .aspectRatio(contentMode:.fill)
+            .frame(minWidth: 0, maxWidth: 400)
+            .cornerRadius(24)
             .overlay(
                 VStack(alignment: .center, spacing: 12) {
                     Text(c_atch.name.uppercased())
                         .foregroundColor(Color.white)
+                        .font(.largeTitle)
+                        .fontWeight(.bold)
+                        .shadow(radius: 5)
+                        .padding(.horizontal, 18)
+                        .padding(.vertical, 4)
+                        .overlay(
+                            Rectangle()
+                                .fill(Color.white)
+                                .frame(height: 1),
+                            alignment: .bottom)
+                    
+                    
                     Text(c_atch.location.uppercased())
-                        .foregroundColor(Color.white)
+                        .foregroundColor(Color.black)
+                        .font(.footnote)
+                        .fontWeight(.bold)
+                        .frame(minWidth: 85)
+                        .padding(.horizontal, 10)
+                        .padding(.vertical, 5)
+                        .background(Capsule().fill(Color.white)
+                        )
                 }
-                .frame(minWidth: 280)
-                .padding(.bottom, 50),
+                    .frame(minWidth: 280)
+                    .padding(.bottom, 50),
                 alignment: .bottom
-            
+                
             )
     }
 }

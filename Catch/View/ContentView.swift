@@ -9,7 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        CardView(c_atch: catchData[0])
+            .padding(.vertical, 80.0)
     }
 }
 
